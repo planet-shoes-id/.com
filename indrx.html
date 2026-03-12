@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Planet Shoes</title>
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:url('');
+background-size:cover;
+}
+
+.marquee{
+background:black;
+color:white;
+padding:8px;
+font-size:13px;
+}
+
+.toptext{
+text-align:center;
+font-size:14px;
+font-weight:bold;
+padding:6px;
+}
+
+.container{
+margin:8px;
+padding:10px;
+background:rgba(255,255,255,0.75);
+backdrop-filter:blur(6px);
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+input,select{
+width:100%;
+padding:8px;
+margin-top:3px;
+margin-bottom:7px;
+border-radius:5px;
+border:1px solid #ccc;
+font-size:14px;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#25D366;
+color:white;
+border:none;
+border-radius:8px;
+font-size:16px;
+font-weight:bold;
+}
+
+.note{
+font-size:12px;
+background:rgba(232,255,232,0.9);
+padding:6px;
+border-radius:6px;
+margin-top:6px;
+}
+
+label{
+font-size:13px;
+font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="marquee">
+<marquee>
+SELAMAT DATANG DI KERANJANG SHOP PLANET SHOES ID • PASTI AMAN DAN AMANAH • PEMBELIAN ONLINE ESTIMASI 2-3 HARI • PRODUK BARU & ASLI 100% • JIKA ADA MASALAH DENGAN BUKTI VIDEO UANG KEMBALI
+</marquee>
+</div>
+
+<div class="toptext">
+DATANG DI KRANJANG SHOP PLANET SHOES ID YANG TERPERCAYA
+</div>
+
+<div class="container">
+
+<label>Nama</label>
+<input id="nama">
+
+<label>Alamat Lengkap / Kode Pos</label>
+<input id="alamat">
+
+<label>No WA / HP</label>
+<input id="wa">
+
+<label>Pilihan Harga Promo / Merek</label>
+<select id="promo">
+<option>SKECHERS - Rp 255.000 (Buy Mall Rp 555.000)</option>
+<option>NIKE - Rp 555.000 - Rp 999.000</option>
+<option>ON CLOUD - Rp 499.000</option>
+</select>
+
+<label>Jumlah</label>
+<select id="stok">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+</select>
+
+<label>Warna</label>
+<select id="warna">
+<option>Hitam</option>
+<option>Putih</option>
+<option>Abu</option>
+<option>Biru</option>
+<option>Merah</option>
+</select>
+
+<label>Ukuran</label>
+<select id="ukuran">
+<option>36</option>
+<option>37</option>
+<option>38</option>
+<option>39</option>
+<option>40</option>
+<option>41</option>
+<option>42</option>
+<option>43</option>
+<option>44</option>
+<option>45</option>
+<option>46</option>
+<option>47</option>
+<option>48</option>
+</select>
+
+<label>Pembayaran</label>
+<select id="bayar">
+<option>BCA</option>
+<option>BRI</option>
+<option>MANDIRI</option>
+<option>DANA</option>
+<option>OVO</option>
+<option>GOPAY</option>
+<option>SHOPEEPAY</option>
+</select>
+
+<button onclick="kirim()">Kirim Order WhatsApp</button>
+
+<div class="note">
+Data pribadi pembeli dijamin 100% aman.
+</div>
+
+</div>
+
+<script>
+
+function kirim(){
+
+var nama=document.getElementById("nama").value;
+var alamat=document.getElementById("alamat").value;
+var wa=document.getElementById("wa").value;
+var promo=document.getElementById("promo").value;
+var stok=document.getElementById("stok").value;
+var warna=document.getElementById("warna").value;
+var ukuran=document.getElementById("ukuran").value;
+var bayar=document.getElementById("bayar").value;
+
+var text="ORDER PLANET SHOES ID %0A%0A"+
+"Nama: "+nama+"%0A"+
+"Alamat: "+alamat+"%0A"+
+"No WA: "+wa+"%0A"+
+"Promo / Merek: "+promo+"%0A"+
+"Jumlah: "+stok+"%0A"+
+"Warna: "+warna+"%0A"+
+"Ukuran: "+ukuran+"%0A"+
+"Pembayaran: "+bayar;
+
+window.open("https://wa.me/628892987887?text="+text);
+
+}
+
+</script>
+
+</body>
+</html>
